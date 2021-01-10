@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+
+  "name": "Social Media",
+  "description": "Reclaim your news feed.",
+  "version": "1.0.0.1",
+
+  "icons": {
+    "128": "images/icon.png"
+  },
+
+  "permissions": [
+    "https://www.twitter.com/",
+    "http://www.twitter.com/",
+    "https://www.facebook.com/",
+    "http://www.facebook.com/",
+    "https://www.quora.com/",
+    "http://www.quora.com/",
+    "tabs",
+    "storage",
+    "http://127.0.0.1:5000/*"
+  ],
+
+  "background": {
+    "scripts": ["bootstrap.js"],
+    "persistent": false
+  },
+  "content_security_policy":  "script-src 'self' http://127.0.0.1:5000/*",
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://stackpath.bootstrapcdn.com; object-src 'self';",
+
+  
+   "content_scripts": [
+    {
+      "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*",
+                  "http://*.facebook.com/*", "https://*.facebook.com/*",
+                  "http://*.quora.com/*", "https://*.quora.com/*"
+                ],
+      "js": ["jquery.js","libs/underscore.min.js", "clean.js"]
+    }
+  ],
+
+  "page_action": {
+    "default_title": "Extension to Take Away Hate (E.T.A.H.)",
+    "default_icon": "icon.png",
+    "default_popup": "emojipopup.html"
+  }
+
+}

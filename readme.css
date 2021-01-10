@@ -1,0 +1,64 @@
+html
+{
+  background-image: url("background.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat:repeat-y;
+  background-size: cover;
+}
+
+#sec1 {
+    background-image: url("161021843348183989.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  
+  }
+
+#Introduction {
+    border-left-style: solid;
+    border-left-color: #3fc8e8;
+    color: black;
+
+}
+  
+#motivation {
+    align-content: center;
+    border-left-style: solid;
+    border-left-color: #3fc8e8;
+    color: black;
+}  
+
+#sec2 {
+    background-image: url("161021843348183989.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+#features {
+    border-left-style: solid;
+    border-left-color: #3fc8e8;
+    color: black;
+    text-align: center;
+}
+
+#contact {
+    border-left-style: solid;
+    border-left-color: #3fc8e8;
+    color: black;
+}
+
+    .btn
+    {
+        height: 70px;
+        width: 100%;
+        font-size: xx-large;
+    }
+
+    .container
+    {
+        box-align: center;
+    }
